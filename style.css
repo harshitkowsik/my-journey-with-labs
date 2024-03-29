@@ -1,0 +1,111 @@
+    * {
+        color: rgba(0, 0, 0, 0.9);
+        font-family: poppins;
+    }
+
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    table {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid;
+        text-align: center;
+        transition: all ease-out 0.5s;
+        color: grey;
+        animation: fade 2s infinite;
+        animation-direction: alternate;
+    }
+
+    td:hover {
+        background-color: rgba(0, 0, 265, 0.5);
+    }
+
+
+    .title {
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        font-weight: 900;
+    }
+
+    .links {
+        border: 1px solid;
+        padding: 0.7em;
+        animation: fade 4s infinite;
+        animation-direction: alternate;
+        margin: 0.4em;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .main {
+        border: 1px solid black;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        background-color: white;
+        width: 70vw;
+        margin-top: 25vh;
+        height: 45vh;
+        animation: fade 3s infinite;
+        animation-direction: alternate;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+
+    td:active {
+        background-color: rgba(265, 0, 0, 0.5);
+    }
+
+
+    .link-bt {
+        border: 1px solid;
+        margin: 0;
+        width: 1em;
+        height: 1em;
+        padding: 0.5em;
+        animation: fade 5s infinite;
+        animation-direction: alternate;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (width<600px) {
+        .pc {
+            display: none;
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            border-color: rgba(265, 0, 0, 0.5);
+        }
+
+        100% {
+            border-color: rgba(0, 0, 265, 0.5);
+        }
+    }
