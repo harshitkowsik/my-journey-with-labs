@@ -91,7 +91,7 @@
         font-weight: 900;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: ;
     }
 
     @media (width<600px) {
@@ -102,7 +102,7 @@
 
     @keyframes fade {
         0% {
-            border-color: rgba(265, 0, 0, 0.5);
+            border-color: rgba(256, 0, 0, 0.5);
         }
 
         100% {
